@@ -1,8 +1,8 @@
 # definition provider
 provider "aws" {
-  region = "${var.provider_region}"
-  access_key = "${var.access_key}"
-  secret_key = "Gj/1jiR/hKNRzU9LY0PTZMwfT5vrlQLW3sQlq9Vo"
+  region = "ap-northeast-1"
+  access_key = "AKIAZZSJDLM6PCICUTAS"
+  secret_key = "KnBhY/FDP1pVC+gqiY8SUIEGSndsh6R+eNtrR3Rg"
 }
 
 resource "aws_vpc" "test-vpc" {
