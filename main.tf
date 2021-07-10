@@ -1,5 +1,5 @@
-variable "access_key" {}
-variable "secret_key" {}
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
 
 # definition provider
 provider "aws" {
@@ -9,7 +9,7 @@ provider "aws" {
   region = "ap-northeast-1"
 }
 
-resouce "aws_vpc" "test-vpc" {
+resource "aws_vpc" "test-vpc" {
    cidr_block = "10.0.0.0/16"
    tags = {
      Name = "test-vpc"
