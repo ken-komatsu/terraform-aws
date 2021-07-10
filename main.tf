@@ -1,8 +1,8 @@
 # definition provider
 provider "aws" {
-  region = "ap-northeast-1"
-  secret_key = "AKIAZZSJDLM6PCICUTAS"
-  access_key = "KnBhY/FDP1pVC+gqiY8SUIEGSndsh6R+eNtrR3Rg"
+  region="ap-northeast-1"
+  access_key="AKIAZZSJDLM6PCICUTAS"
+  secret_key="KnBhY/FDP1pVC+gqiY8SUIEGSndsh6R+eNtrR3Rg"
 }
 
 resource "aws_vpc" "test-vpc" {
