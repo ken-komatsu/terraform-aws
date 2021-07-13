@@ -57,7 +57,7 @@ resource "aws_lb_target_group" "main" {
   target_type = "ip"
 
   # コンテナへの死活監視設定
-  health_check = {
+  health_check {
     port = 80
     path = "/"
   }
