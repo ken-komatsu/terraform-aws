@@ -67,7 +67,7 @@ resource "aws_lb_target_group" "main" {
 # https://www.terraform.io/docs/providers/aws/r/lb_listener_rule.html
 resource "aws_lb_listener_rule" "main" {
   # ルールを追加するリスナー
-  listener_arn = "${aws_lb_listener.main.arn}"
+  listener_arn = "${aws_lb.main.arn}"
 
   # 受け取ったトラフィックをターゲットグループへ受け渡す
   action {
