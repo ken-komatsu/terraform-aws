@@ -56,11 +56,6 @@ resource "aws_lb_target_group" "main" {
   protocol    = "HTTP"
   target_type = "ip"
 
-  # コンテナへの死活監視設定
-  health_check = {
-    port = 80
-    path = "/"
-  }
 }
 
 # ALB Listener Rule
